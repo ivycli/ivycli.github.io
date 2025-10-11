@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ivysite</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- font cave -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    html { 
+        scroll-behavior: smooth; 
+    }
+  /* keep anchors from hiding under the sticky header */
+    section { 
+        scroll-margin-top: 88px; 
+    } /* ~header height */
+
+
+    </style>
+</head>
+  
+<body class="bg-gradient-to-b from-white to-gray-50 text-gray-800">
+  <!-- nav bar -->
+  <header class="sticky top-0 bg-white bg-opacity-80 backdrop-blur shadow-sm z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#home" class="font-semibold text-lg">ivy ching li - 厉晴</a>
+      <nav class="space-x-4 text-sm">
+        <a href="#resume" class="hover:underline">resume</a>
+        <a href="#work" class="hover:underline">personal projects</a>
+        <a href="#education" class="hover:underline">education</a>
+        <a href="#contact" class="hover:underline">find me</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- home section w face and intro and buttons -->
+  <section id="home" class="max-w-6xl mx-auto px-8 md:px-16 py-12 flex flex-col md:flex-row items-center md:items-start md:space-x-8 lg:space-x-16">
+
+    <div class="flex justify-center md:justify-start shrink-0">
+        <img src="photos/profile.png" 
+        alt="ivy's face" 
+        class="rounded-3xl w-64 h-auto object-contain shadow-lg" />
+    </div>
+    <div class="mt-8 md:mt-0 max-w-xl">
+      <h1 class="text-4xl font-bold mb-2">hello, i'm ivy!</h1>
+      <p class="text-gray-600 mb-4">nice to meet you.</p>
+      <p class="text-lg mb-3">currently i am working at rippling and pursuing a masters in computer science from georgia tech! 
+        i graduated from uc berkeley this year and split my time between los angeles and the bay area. i love fashion, art history,
+        reading, and anything outdoorsy. </p>
+      <p class="mb-4 text-gray-700 leading-relaxed">also in pursuit of joy and community, check out
+        some more about me below </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#resume" class="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800">professional experience</a>
+        <a href="#work" class="px-4 py-2 border border-gray-900 rounded-lg hover:bg-gray-100">personal projects</a>
+      </div>
+    </div>
+  </section>  
+
+  <!-- resume -->
+  <section id="resume" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-6">professional experience</h2>
+    <div class="space-y-6">
+    <!-- most recent experience-->
+    <div class="border rounded-2xl p-5">
+        <h3 class="font-semibold text-lg">Business Analyst</h3>
+        <p class="text-gray-600 mb-1">Rippling (2025-)</p>
+        <ul class="list-disc ml-5 text-gray-700">
+        </ul>
+      </div>
+
+      <div class="border rounded-2xl p-5">
+        <h3 class="font-semibold text-lg">Marketing + Strategy</h3>
+        <p class="text-gray-600 mb-1">Center for Responsible, Decentralized Intelligence (2025)</p>
+        <ul class="list-disc ml-5 text-gray-700">
+        </ul>
+      </div>
+
+      <div class="border rounded-2xl p-5">
+        <h3 class="font-semibold text-lg">Marketing and Data Engineering</h3>
+        <p class="text-gray-600 mb-1">The Spoke (2021-2022)</p>
+        <ul class="list-disc ml-5 text-gray-700">
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- work done -->
+  <section id="work" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-6">some of my personal projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="border rounded-2xl p-5 hover:shadow-md">
+        <h3 class="font-semibold text-lg mb-2">
+            Death of Originality: Examining Algorithmic Patterns in Modern Media</h3>
+        <p class="text-gray-700 mb-2">One of the only undergraduate students admitted to the course</p>
+        <p class="text-sm text-gray-500">NW200, History and Theory of New Media</p>
+      </div>
+
+      <div class="border rounded-2xl p-5 hover:shadow-md">
+        <h3 class="font-semibold text-lg mb-2">
+            content creation</h3>
+        <p class="text-gray-700 mb-2">amassed over 10+ million lifetime views across instagram and tiktok 
+
+        </p>
+        <p class="text-sm text-gray-500">chegg, jolibee, hollister, cerave, mediheal, turbo ai, judydoll</p>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- education -->
+<section id="education" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-4">education</h2>
+    <ul class="list-disc ml-6 text-gray-700 space-y-2">
+
+    <li><span class="font-semibold">Georgia Tech</span> M.S. in Computer Science, 2026-2029</li>
+    <li><span class="font-semibold">Relevant Coursework:</span> coming soon! </li>
+
+    <li><span class="font-semibold">University of California, Berkeley</span> — B.A. in Media Studies & Data Science, 2022-2025 </li>
+    <li><span class="font-semibold">Relevant Coursework:</span> Discrete Mathematics & Probability, Data Structures, Media Theory, Computational Design</li>
+
+    <li><span class="font-semibold">Pasadena City College</span> A.A. in Business Administration, 2020-2022 </li>
+    <li><span class="font-semibold">Relevant Coursework: </span>Managerial & Financial Accounting, Calculus I & II, Statistics</li>
+    </ul>
+    </section>
+
+
+<!-- find me -->
+<section id="contact" class="max-w-6xl mx-auto px-4 py-12 text-center">
+    <h2 class="text-2xl font-semibold mb-6">where to find me</h2>
+    <p class="text-gray-700 mb-6">i'm everywhere!</p>
+    <div class="flex flex-wrap justify-center gap-4">
+    <a href="mailto:ivy0505@berkeley.edu" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">shoot me an email</a>
+    <a href="https://substack.com/@geologistivy" target="_blank" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">substack</a>
+    <a href="https://www.tiktok.com/@geologistivy" target="_blank" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">tiktok</a>
+    <a href="https://linkedin.com/in/ivyli/" target="_blank" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">linkedin</a>
+    <a href="https://github.com" target="_blank" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">github</a>
+    </div>
+    </section>
+
+
+  <!-- footer -->
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    © <span id="year"></span> Ivy Ching Li. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
