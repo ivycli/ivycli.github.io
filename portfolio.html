@@ -3,42 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio</title>
+  <title>portfolio | ivy ching li</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Noto+Serif+SC:wght@400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="sticky top-0 bg-white bg-opacity-90 backdrop-blur-md shadow-sm z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-      <a href="index.html#home" class="font-semibold text-lg flex items-center gap-2">
-        <img src="photos/favicon.jpg" alt="logo" class="rounded-3xl h-9 object-contain">
-        ivy ching li
+
+<body>
+  <header class="sticky top-6 z-50 max-w-4xl mx-auto px-4 mt-6">
+    <div class="py-4 px-8 header-ivory rounded-full border border-charcoal border-opacity-10 shadow-md flex justify-between items-center transition-all">
+      <a href="index.html#home" class="text-base flex items-center gap-3">
+        <img src="photos/favicon.jpg" alt="logo" class="rounded-full h-8 w-8 object-cover img-warm">
+        <span>ivy ching li</span>
       </a>
       <nav class="text-sm">
-        <a href="index.html" class="hover:underline text-gray-600">back to home</a>
+        <a href="index.html" class="hover-jade transition">back to home</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-8 py-16 animate-fade-in">
-    <div class="mb-12">
-      <h1 class="text-4xl font-bold mb-4">social media portfolio</h1>
-      <p class="text-lg text-gray-600">from my work in high school circa 2016 to 2026 postgrad </p>
+  <main class="max-w-5xl mx-auto px-8 py-24 animate-fade-in">
+    <div class="mb-20 text-center">
+      <h1 class="text-4xl md:text-5xl mb-6 serif-heading text-charcoal">social media portfolio</h1>
+      <p class="text-lg opacity-80 max-w-2xl mx-auto leading-loose">a curated collection of digital content and brand partnerships reaching over 10 million views across global platforms</p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
       <div class="group">
-        <div class="aspect-video bg-gray-200 rounded-2xl mb-4 overflow-hidden border card-hover">
-           <div class="w-full h-full flex items-center justify-center text-gray-400">brand content placeholder</div>
+        <div class="aspect-video bg-white rounded-2xl mb-6 overflow-hidden border border-charcoal border-opacity-20 card-hover img-warm">
+           <div class="w-full h-full flex items-center justify-center opacity-40 text-sm">chegg partnership</div>
         </div>
-        <h3 class="font-semibold text-lg">featured campaign</h3>
-        <p class="text-sm text-gray-500">short form video strategy and execution</p>
+        <h3 class="text-xl serif-heading mb-2">chegg</h3>
+        <p class="text-sm opacity-70 leading-loose">educational content and student lifestyle</p>
+      </div>
+
+      <div class="group stagger-card">
+        <div class="aspect-video bg-white rounded-2xl mb-6 overflow-hidden border border-charcoal border-opacity-20 card-hover img-warm">
+           <div class="w-full h-full flex items-center justify-center opacity-40 text-sm">cerave campaign</div>
+        </div>
+        <h3 class="text-xl serif-heading mb-2">cerave</h3>
+        <p class="text-sm opacity-70 leading-loose">skincare and beauty digital strategy</p>
+      </div>
+
+      <div class="group">
+        <div class="aspect-video bg-white rounded-2xl mb-6 overflow-hidden border border-charcoal border-opacity-20 card-hover img-warm">
+           <div class="w-full h-full flex items-center justify-center opacity-40 text-sm">judydoll content</div>
+        </div>
+        <h3 class="text-xl serif-heading mb-2">judydoll</h3>
+        <p class="text-sm opacity-70 leading-loose">creative visual storytelling</p>
       </div>
     </div>
   </main>
 
-  <footer class="border-t py-6 text-center text-sm text-gray-500">
-    © <span id="year"></span> Ivy Ching Li. all rights reserved.
+  <footer class="border-t border-charcoal border-opacity-10 py-10 text-center text-sm opacity-60">
+    © <span id="year"></span> ivy ching li. all rights reserved.
   </footer>
   
   <script>

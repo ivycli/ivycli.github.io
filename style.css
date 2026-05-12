@@ -1,19 +1,93 @@
+:root {
+  --color-ivory: #fbf9f6;
+  --color-charcoal: #2d2d2c;
+  --color-jade: #7b9082;
+  --color-cinnabar: #c2695c;
+}
+
 body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
   font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header-ivory {
+  background-color: var(--color-ivory);
 }
 
 html {
   scroll-behavior: smooth;
-  /* this ensures that clicking a link lands perfectly below your nav bar */
-  scroll-padding-top: 100px;
+  scroll-padding-top: 90px;
 }
 
-/* fade in animation for a softer page load */
+.cursive-heading {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.text-charcoal { color: var(--color-charcoal); }
+.text-jade { color: var(--color-jade); }
+
+.hover-jade:hover {
+  color: var(--color-jade);
+}
+
+.btn-primary {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-cinnabar);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(194, 105, 92, 0.15);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-charcoal);
+  color: var(--color-charcoal);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-jade);
+  border-color: var(--color-jade);
+  color: var(--color-ivory);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(123, 144, 130, 0.15);
+}
+
+.img-warm {
+  filter: sepia(0.15) saturate(1.15) contrast(1.05);
+  transition: filter 0.6s ease;
+}
+
+.img-warm:hover {
+  filter: sepia(0) saturate(1) contrast(1);
+}
+
+.card-hover {
+  transition: all 0.5s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--color-jade);
+  box-shadow: 0 15px 35px -5px rgba(123, 144, 130, 0.08);
+  transform: translateY(-4px);
+}
+
 @keyframes fadeIn {
   from { 
     opacity: 0; 
-    transform: translateY(8px); 
+    transform: translateY(15px); 
   }
   to { 
     opacity: 1; 
@@ -22,26 +96,5 @@ html {
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-/* button hover effect */
-.btn-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-hover:hover {
-  transform: translateY(-2px);
-  background-color: #1f2937;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* card hover effect */
-.card-hover {
-  transition: all 0.3s ease;
-}
-
-.card-hover:hover {
-  border-color: #d1d5db;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.8s ease-out forwards;
 }

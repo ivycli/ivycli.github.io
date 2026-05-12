@@ -5,121 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ivysite</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="photos/favicon.jpg" />
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gradient-to-b from-white to-gray-50 text-gray-800">
-  <header class="sticky top-0 bg-white bg-opacity-80 backdrop-blur shadow-sm z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-        <a href="#home" class="text-lg flex items-center gap-2">
-            <img src="photos/favicon.jpg" alt="logo" class="rounded-3xl h-9 object-contain">
-            ivy ching li - 厉晴
+<body>
+  <header class="sticky top-6 z-50 max-w-4xl mx-auto px-4 mt-6">
+    <div class="py-4 px-8 header-ivory rounded-full border border-charcoal border-opacity-10 shadow-md flex justify-between items-center transition-all">
+        <a href="#home" class="text-base flex items-center gap-3">
+            <img src="photos/favicon.jpg" alt="logo" class="rounded-full h-8 w-8 object-cover img-warm">
+            <span>IVY CHING LI</span> 
           </a>          
-      <nav class="space-x-4 text-sm">
-        <a href="#resume" class="hover:underline">resume</a>
-        <a href="#work" class="hover:underline">personal projects</a>
-        <a href="#education" class="hover:underline">education</a>
-        <a href="#contact" class="hover:underline">find me</a>
+      <nav class="space-x-6 text-sm hidden md:block">
+        <a href="#resume" class="hover-jade transition">resume</a>
+        <a href="#work" class="hover-jade transition">personal projects</a>
+        <a href="#education" class="hover-jade transition">education</a>
+        <a href="#contact" class="hover-jade transition">find me</a>
       </nav>
     </div>
   </header>
 
   <main class="animate-fade-in">
-    <section id="home" class="max-w-6xl mx-auto px-8 md:px-16 py-12 flex flex-col md:flex-row items-center md:items-start md:space-x-8 lg:space-x-16">
-      <div class="flex justify-center md:justify-start shrink-0">
-          <img src="photos/gradpic.jpg" alt="ivy's face" class="rounded-3xl w-64 h-auto object-contain shadow-lg" />
+    <section id="home" class="max-w-4xl mx-auto px-8 py-16 flex flex-col md:flex-row items-stretch gap-12">
+      <div class="md:w-5/12 shrink-0 flex">
+          <img src="photos/gradpic.jpg" alt="ivy's face" class="rounded-2xl w-full h-full object-cover img-warm shadow-sm" />
       </div>
-      <div class="mt-8 md:mt-0 max-w-xl">
-        <h1 class="text-4xl mb-2">hello, i'm ivy,</h1>
-        <p class="text-gray-600 mb-4">thanks for checking out my site!</p>
-        <p class="text-lg mb-3">currently i am working at rippling and about to start my masters in computer science from georgia tech! i graduated from uc berkeley this year and split my time between los angeles and the bay area. let's talk fashion, beauty, art history, personal finance reading, yoga or anything else!</p>
-        <p class="mb-4 text-gray-700 leading-relaxed">also in pursuit of joy, whimsy and community, check out some more about me below</p>
-        <div class="flex flex-wrap gap-3">
-          <a href="#resume" class="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">professional experience</a>
-          <a href="#work" class="px-4 py-2 border border-gray-900 rounded-lg hover:bg-gray-100 transition">personal projects</a>
+      <div class="md:w-7/12 flex flex-col justify-center">
+        <h1 class="text-6xl md:text-4xl mb-4 text-charcoal">hello, i'm ivy!</h1>
+        <p class="mb-8 text-charcoal opacity-80 leading-relaxed">it's super nice to meet you! currently, i am in my postgrad era working at Rippling full time, in my free time i am in pursuit of joy, whimsy and community, check out some more about me below</p>
+        <div class="flex flex-wrap gap-4 mt-auto">
+          <a href="#resume" class="px-6 py-3 btn-primary rounded-lg text-sm">professional experience</a>
+          <a href="#work" class="px-6 py-3 btn-outline rounded-lg text-sm">personal projects</a>
         </div>
       </div>
     </section>
 
-    <section id="resume" class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl mb-6">professional experience</h2>
-      <div class="space-y-6">
-        <div class="border rounded-2xl p-5 card-hover">
-          <h3 class="text-lg">Global Payroll</h3>
-          <p class="text-gray-600 mb-1">Rippling (2025-)</p>
-          <ul class="list-disc ml-5 text-gray-700"></ul>
+    <section id="resume" class="max-w-4xl mx-auto px-8 py-16">
+      <h2 class="text-2xl uppercase mb-8 text-center text-charcoal">professional experience</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white">
+          <h3 class="text-xl mb-1 text-charcoal">Global Payroll</h3>
+          <p class="opacity-70 text-sm">Rippling (2025 to present)</p>
         </div>
 
-        <div class="border rounded-2xl p-5 card-hover">
-          <h3 class="text-lg">Marketing + Strategy Intern</h3>
-          <p class="text-gray-600 mb-1">Center for Responsible, Decentralized Intelligence (2025)</p>
-          <ul class="list-disc ml-5 text-gray-700"></ul>
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white">
+          <h3 class="text-xl mb-1 text-charcoal">Marketing + Strategy Intern</h3>
+          <p class="opacity-70 text-sm">Center for Responsible, Decentralized Intelligence (2025)</p>
         </div>
 
-        <div class="border rounded-2xl p-5 card-hover">
-          <h3 class="text-lg">Marketing and Data Intern</h3>
-          <p class="text-gray-600 mb-1">The Spoke (2021-2022)</p>
-          <ul class="list-disc ml-5 text-gray-700"></ul>
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white">
+          <h3 class="text-xl mb-1 text-charcoal">Marketing and Data Intern</h3>
+          <p class="opacity-70 text-sm">The Spoke (2021 to 2022)</p>
         </div>
       </div>
     </section>
 
-    <section id="work" class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl mb-6">some of my personal projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="border rounded-2xl p-5 card-hover">
-          <h3 class="text-lg mb-2">Death of Originality: Examining Algorithmic Patterns in Modern Media</h3>
-          <p class="text-gray-700 mb-2">One of the only undergraduate students admitted to the course</p>
-          <p class="text-sm text-gray-500">NW200, History and Theory of New Media</p>
+    <section id="work" class="max-w-5xl mx-auto px-8 py-16">
+      <h2 class="text-2xl uppercase mb-10 text-center text-charcoal">some of my personal projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white flex flex-col h-full">
+          <h3 class="text-xl mb-3 leading-snug">Death of Originality: Examining Algorithmic Patterns in Modern Media</h3>
+          <p class="opacity-80 mb-4 leading-relaxed">One of the only undergraduate students admitted to the course</p>
+          <p class="text-xs opacity-60 uppercase mt-auto">NW200, History and Theory of New Media</p>
         </div>
 
-        <div class="border rounded-2xl p-5 card-hover flex flex-col h-full bg-white">
-          <h3 class="text-lg mb-2">content creation</h3>
-          <p class="text-gray-700 mb-2">amassed over 10 million lifetime views across instagram and tiktok</p>
-          <p class="text-sm text-gray-500 mb-8">chegg, jolibee, hollister, cerave, mediheal, turbo ai, judydoll</p>
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white flex flex-col h-full">
+          <h3 class="text-xl mb-3">content creation</h3>
+          <p class="opacity-80 mb-4 leading-relaxed">amassed over 10 million lifetime views across instagram and tiktok</p>
+          <p class="text-xs opacity-60 uppercase mb-8 leading-relaxed">chegg, jolibee, hollister, cerave, mediheal, turbo ai, judydoll</p>
           <div class="mt-auto">
-            <a href="portfolio.html" class="block w-full text-center px-5 py-3 bg-gray-900 text-white rounded-xl btn-hover">
+            <a href="portfolio.html" class="block w-full text-center px-5 py-3 btn-primary rounded-xl text-sm">
               view social media portfolio
             </a>
           </div>
         </div>
 
-        <div class="border rounded-2xl p-5 card-hover">
-          <h3 class="text-lg mb-2">speech and debate judge</h3>
-          <p class="text-gray-700 mb-2">judged over a dozen tournaments for elementary to high school debate</p>
-          <p class="text-sm text-gray-500">parlimentary debate, congressional debate, lincoln douglas, spontaneous speaking</p>
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white flex flex-col h-full">
+          <h3 class="text-xl mb-3">speech and debate judge</h3>
+          <p class="opacity-80 mb-4 leading-relaxed">judged over a dozen tournaments for elementary to high school debate</p>
+          <p class="text-xs opacity-60 uppercase leading-relaxed mt-auto">parlimentary debate, congressional debate, lincoln douglas, spontaneous speaking</p>
         </div>
       </div>
     </section>
 
-    <section id="education" class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl mb-4">education</h2>
-      <ul class="list-disc ml-6 text-gray-700 space-y-2">
-        <li>Georgia Tech M.S. in Computer Science, 2026-2029</li>
-        <li>Relevant Coursework: HCI, coming soon!</li>
-        <li>University of California, Berkeley (Media Studies with a specialization in Digital Studies), 2022-2025</li>
-        <li>Relevant Coursework: Discrete Mathematics & Probability, Data Structures and Algorithms, Structure and Interpretation of Computer Programs, Computational Design, Linear Algebra and Differential Equations, Society and Technology, History and Theory of New Media (Graduate), Audio-Visual Media, Media Theories and Processes, Sociology of Culture</li>
-        <li>Pasadena City College Business Administration, 2020-2022</li>
-        <li>Relevant Coursework: Managerial & Financial Accounting, Calculus I & II, Statistics, Art History, Business, Business Law, Micro & Macroeconomics</li>
-      </ul>
+    <section id="education" class="max-w-3xl mx-auto px-8 py-16">
+      <h2 class="text-2xl uppercase mb-8 text-center text-charcoal">education</h2>
+      <div class="space-y-8 opacity-80">
+        <div>
+            <h3 class="text-xl mb-1 text-charcoal">Georgia Tech</h3>
+            <p class="text-sm mb-2">M.S. in Computer Science, 2026 to 2029</p>
+            <p class="leading-relaxed">Relevant Coursework: HCI, coming soon</p>
+        </div>
+        
+        <div>
+            <h3 class="text-xl mb-1 text-charcoal">University of California, Berkeley</h3>
+            <p class="text-sm mb-2">Media Studies with a specialization in Digital Studies, 2022 to 2025</p>
+            <p class="leading-relaxed">Relevant Coursework: Discrete Mathematics & Probability, Data Structures and Algorithms, Structure and Interpretation of Computer Programs, Computational Design, Linear Algebra and Differential Equations, Society and Technology, History and Theory of New Media, Audio-Visual Media, Media Theories and Processes, Sociology of Culture</p>
+        </div>
+
+        <div>
+            <h3 class="text-xl mb-1 text-charcoal">Pasadena City College</h3>
+            <p class="text-sm mb-2">Business Administration, 2020 to 2022</p>
+            <p class="leading-relaxed">Relevant Coursework: Managerial & Financial Accounting, Calculus I & II, Statistics, Art History, Business, Business Law, Micro & Macroeconomics</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="max-w-6xl mx-auto px-4 py-12 text-center">
-      <h2 class="text-2xl mb-6">where to find me</h2>
-      <p class="text-gray-700 mb-6">i'm everywhere!</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="mailto:ivy0505@berkeley.edu" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">shoot me an email</a>
-        <a href="https://linkedin.com/in/ivyli/" target="_blank" class="px-5 py-2 border border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition">linkedin</a>
+    <section id="contact" class="max-w-4xl mx-auto px-8 py-16 text-center">
+      <h2 class="text-2xl uppercase mb-4 text-charcoal">where to find me</h2>
+      <p class="opacity-80 mb-8">i'm everywhere</p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="mailto:ivy0505@berkeley.edu" class="px-8 py-3 btn-outline rounded-full text-sm">shoot me an email</a>
+        <a href="https://linkedin.com/in/ivyli/" target="_blank" class="px-8 py-3 btn-outline rounded-full text-sm">linkedin</a>
       </div>
     </section>
   </main>
 
-  <footer class="border-t py-6 text-center text-sm text-gray-500">
-    © <span id="year"></span> Ivy Ching Li. All rights reserved.
+  <footer class="border-t border-charcoal border-opacity-10 py-8 text-center text-sm opacity-60">
+    © <span id="year"></span> ivy ching li. all rights reserved.
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
