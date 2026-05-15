@@ -34,8 +34,12 @@
           <img src="photos/gradpic.jpg" alt="ivy's face" class="rounded-2xl w-full h-full object-cover img-warm shadow-sm" />
       </div>
       <div class="md:w-7/12 flex flex-col justify-center">
-        <h1 class="text-6xl md:text-4xl mb-4 text-charcoal">hello, i'm ivy!</h1>
-        <p class="mb-8 text-charcoal opacity-80 leading-relaxed">it's super nice to meet you! currently, i am in my postgrad era working at Rippling full time, in my free time i am in pursuit of joy, whimsy and community, check out some more about me below</p>
+        <h1 class="text-6xl md:text-4xl mb-4 text-charcoal">Hello! It's nice to meet you, I'm Ivy. <3</h1>
+        <p class="mb-8 text-charcoal opacity-80 leading-relaxed">
+          I’m currently navigating my postgrad era while working full-time at Rippling, 
+          but outside of the office, I’m in pursuit of joy, whimsy, and community.
+          Check out more of my journey below!
+        </p>
         <div class="flex flex-wrap gap-4 mt-auto">
           <a href="#resume" class="px-6 py-3 btn-primary rounded-lg text-sm">professional experience</a>
           <a href="#work" class="px-6 py-3 btn-outline rounded-lg text-sm">personal projects</a>
@@ -88,6 +92,25 @@
           <p class="opacity-80 mb-4 leading-relaxed">judged over a dozen tournaments for elementary to high school debate</p>
           <p class="text-xs opacity-60 uppercase leading-relaxed mt-auto">parlimentary debate, congressional debate, lincoln douglas, spontaneous speaking</p>
         </div>
+
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white flex flex-col h-full">
+          <h3 class="text-xl mb-3">Rakuten Viki Campus Events</h3>
+          <p class="opacity-80 mb-4 leading-relaxed">Organized and executed long-term campus collaborations for over two years.</p>
+          <p class="text-xs opacity-60 uppercase mt-auto">Brand Ambassadorship, Event Planning</p>
+        </div>
+
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white flex flex-col h-full">
+          <h3 class="text-xl mb-3">Vocalist & Performer</h3>
+          <p class="opacity-80 mb-4 leading-relaxed">Active participant in performing arts and musical theater ensembles.</p>
+          <p class="text-xs opacity-60 uppercase mt-auto">Creative Performance, Vocal Arts</p>
+        </div>
+
+        <div class="border border-charcoal border-opacity-20 rounded-2xl p-6 card-hover bg-white flex flex-col h-full">
+          <h3 class="text-xl mb-3">Digital Asset Design</h3>
+          <p class="opacity-80 mb-4 leading-relaxed">Designing live digital assets and web elements for technical organizations.</p>
+          <p class="text-xs opacity-60 uppercase mt-auto">Adobe Photoshop, Figma, UI/UX</p>
+        </div>
+
       </div>
     </section>
 
@@ -102,7 +125,7 @@
         
         <div>
             <h3 class="text-xl mb-1 text-charcoal">University of California, Berkeley</h3>
-            <p class="text-sm mb-2">Media Studies with a specialization in Digital Studies, 2022 to 2025</p>
+            <p class="text-sm mb-2">Data Science, Media Studies with a specialization in Digital Studies, 2022 to 2025</p>
             <p class="leading-relaxed">Relevant Coursework: Discrete Mathematics & Probability, Data Structures and Algorithms, Structure and Interpretation of Computer Programs, Computational Design, Linear Algebra and Differential Equations, Society and Technology, History and Theory of New Media, Audio-Visual Media, Media Theories and Processes, Sociology of Culture</p>
         </div>
 
@@ -127,9 +150,14 @@
   <footer class="border-t border-charcoal border-opacity-10 py-8 text-center text-sm opacity-60">
     © <span id="year"></span> ivy ching li. all rights reserved.
   </footer>
+  
+  <button id="backToTop" class="fixed bottom-8 right-8 p-4 rounded-full bg-charcoal text-ivory opacity-0 pointer-events-none transition-all duration-300 shadow-lg z-50 flex items-center justify-center" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
+
 </body>
 </html>

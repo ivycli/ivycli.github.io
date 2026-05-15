@@ -24,45 +24,67 @@
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-8 py-24 animate-fade-in">
-    <div class="mb-20 text-center">
-      <h1 class="text-4xl md:text-5xl mb-6 serif-heading text-charcoal">social media portfolio</h1>
-      <p class="text-lg opacity-80 max-w-2xl mx-auto leading-loose">a curated collection of digital content and brand partnerships reaching over 10 million views across global platforms</p>
-    </div>
+<main class="max-w-4xl mx-auto px-8 py-16 animate-fade-in">
+  <div class="mb-10 text-left">
+    <h2 class="text-2xl uppercase mb-4 text-charcoal">social media portfolio</h2>
+    <p class="opacity-80 leading-relaxed">from high school to postgrad</p>
+  </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
-      <div class="group">
-        <div class="aspect-video bg-white rounded-2xl mb-6 overflow-hidden border border-charcoal border-opacity-20 card-hover img-warm">
-           <div class="w-full h-full flex items-center justify-center opacity-40 text-sm">chegg partnership</div>
-        </div>
-        <h3 class="text-xl serif-heading mb-2">chegg</h3>
-        <p class="text-sm opacity-70 leading-loose">educational content and student lifestyle</p>
-      </div>
-
-      <div class="group stagger-card">
-        <div class="aspect-video bg-white rounded-2xl mb-6 overflow-hidden border border-charcoal border-opacity-20 card-hover img-warm">
-           <div class="w-full h-full flex items-center justify-center opacity-40 text-sm">cerave campaign</div>
-        </div>
-        <h3 class="text-xl serif-heading mb-2">cerave</h3>
-        <p class="text-sm opacity-70 leading-loose">skincare and beauty digital strategy</p>
-      </div>
-
-      <div class="group">
-        <div class="aspect-video bg-white rounded-2xl mb-6 overflow-hidden border border-charcoal border-opacity-20 card-hover img-warm">
-           <div class="w-full h-full flex items-center justify-center opacity-40 text-sm">judydoll content</div>
-        </div>
-        <h3 class="text-xl serif-heading mb-2">judydoll</h3>
-        <p class="text-sm opacity-70 leading-loose">creative visual storytelling</p>
+  <div class="relative border-l border-charcoal border-opacity-20 ml-2 md:ml-4">
+    
+    <div class="mb-8 ml-6 relative">
+      <div class="absolute -left-8 mt-1.5 w-4 h-4 rounded-full bg-jade border-4 border-ivory"></div>
+      <h3 class="text-xl mb-1 text-charcoal">Pasadena Youth Corps Red Cross (2017 - 2020) </h3>
+      <p class="text-sm opacity-70 mb-3">Served as Event Coordinator and Publicity, then President at the Regional Red Cross Chapter.</p>
+      
+      <div class="bg-white rounded-2xl border border-charcoal border-opacity-20 p-6 card-hover flex flex-col items-start">
+        <p class="opacity-80 mb-4 text-sm leading-relaxed">Fortunate enough to have volunteered over 500 hours serving my community through community rebuilding
+          fundraisers, fire and earthquake safety events for children to seniors, blood drives, Rose Parade and more. I created all of the graphics for our events
+          during my time.
+        </p>
+        <a href="https://www.facebook.com/groups/313838765304205/" target="_blank" class="px-6 py-2 btn-outline rounded-lg text-xs">some of my work here</a>
       </div>
     </div>
-  </main>
 
-  <footer class="border-t border-charcoal border-opacity-10 py-10 text-center text-sm opacity-60">
-    © <span id="year"></span> ivy ching li. all rights reserved.
-  </footer>
+    <div class="mb-8 ml-6 relative">
+      <div class="absolute -left-8 mt-1.5 w-4 h-4 rounded-full bg-jade border-4 border-ivory"></div>
+      <h3 class="text-xl mb-1 text-charcoal">High School Class of 2020 Council (2016-2020) </h3>
+      <p class="text-sm opacity-70 mb-3">Marketing and Committee Chair</p>
+      
+      <div class="bg-white rounded-2xl border border-charcoal border-opacity-20 p-6 card-hover flex flex-col items-start">
+        <p class="opacity-80 mb-4 text-sm leading-relaxed">Over 4 years from 2016 to 2020, I produced over 100 graphics for every class council event including Prom, Sadies, Senior Sunrise, and more. The Instagram page highlights some of the graphics produced by me.</p>
+        <a href="https://www.instagram.com/alhambra2020/" target="_blank" class="px-6 py-2 btn-outline rounded-lg text-xs">view instagram page</a>
+      </div>
+    </div>
+
+    <div class="mb-8 ml-6 relative">
+      <div class="absolute -left-8 mt-1.5 w-4 h-4 rounded-full bg-jade border-4 border-ivory"></div>
+      <h3 class="text-xl mb-1 text-charcoal">Other High School Marketing Activities (2016 - 2020) </h3>
+      <p class="text-sm opacity-70 mb-3">I served at Marketing/ Event Coordinator for 3 other clubs.</p>
+      
+      <div class="bg-white rounded-2xl border border-charcoal border-opacity-20 p-6 card-hover flex flex-col items-start">
+        <p class="opacity-80 mb-4 text-sm leading-relaxed">
+          President and Publicity at Boy's Federation, planned social events like the Buddy Dinner. 
+          Event Coordinator at the high school Red Cross club. 
+          President, publicity and event coordinator at Mock Trial. 
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="border-t border-charcoal border-opacity-10 py-10 text-center text-sm opacity-60">
+  © <span id="year"></span> ivy ching li. all rights reserved.
+</footer>
   
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<button id="backToTop" class="fixed bottom-8 right-8 p-4 rounded-full bg-charcoal text-ivory opacity-0 pointer-events-none transition-all duration-300 shadow-lg z-50 flex items-center justify-center" aria-label="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+  </svg>
+</button>
+
+<script src="script.js"></script>
+
 </body>
 </html>

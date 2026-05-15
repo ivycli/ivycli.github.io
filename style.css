@@ -98,3 +98,23 @@ html {
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
 }
+
+.bg-jade { background-color: var(--color-jade); }
+
+/* scroll to top button */
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#backToTop {
+  transform: translateY(10px); /* Slight lift effect when appearing */
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+}
+
+#backToTop:hover {
+  background-color: var(--color-jade); /* Turns green on hover */
+  transform: translateY(-5px); /* Extra bounce when hovered */
+}
